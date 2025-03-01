@@ -3,6 +3,11 @@
     padding: 0;
 }
 
-body{
-    background: #F4F7FF;
+
+.card_2{
+    background: linear-gradient(to right, rgb(68, 27, 255), rgb(192, 192, 255));
+}
+.taskCards{
+
+    
 }

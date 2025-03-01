@@ -24,6 +24,8 @@
 
 <body class="bg-sky-50 h-screen pt-5">
 
+
+
     <!-- navbar -->
     <div class="navbar bg-white max-w-screen-sm lg:max-w-screen-xl rounded-lg mx-auto p-4">
         <div class="flex-1 gap-1">
@@ -42,11 +44,10 @@
             <div class="">
                 <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
                     <div class="w-10 rounded-full">
-                        <img alt="Tailwind CSS Navbar component"
-                            src="assets/theme-btn.png" />
+                        <img alt="Tailwind CSS Navbar component" src="assets/theme-btn.png" />
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -54,43 +55,158 @@
 
     <!-- hero part -->
 
-    <div class="heroCon lg:max-w-screen-xl mx-auto bg-white mt-5 p-3 rounded-2xl ">
+    <div class="heroCon lg:max-w-screen-xl mx-auto  mt-5 p-3 rounded-2xl flex gap-7">
 
-        <div class="leftHero flex">
-            <div class="firstRow flex gap-3">
-                <div class="card_1 h-32 w-64 bg-sky-50 rounded-md flex justify-around items-center">
-                    <div class="bg-white rounded-full">
-                        <i class="fa-solid fa-square-check text-blue-800 text-4xl "></i>
+        <div class="leftHero bg-white p-4 rounded-lg ">
+            <div class="flex">
+                <div class="firstRow flex gap-3">
+                    <div class="card_1 h-32 w-64 bg-sky-50 rounded-md flex justify-around items-center">
+                        <div class="rounded-full">
+                            <i class="fa-solid fa-square-check text-blue-800 text-4xl "></i>
+                        </div>
+                        <div>
+                            <h4>Task Assigned</h4>
+                            <h2 class="text-2xl font-bold">06</h2>
+                        </div>
                     </div>
-                    <div>
-                        <h4>Task Assigned</h4>
-                        <h2 class="text-2xl font-bold">06</h2>
+
+                    <div class=" h-32 w-96 rounded-md pt-3 card_2">
+                        <div class="flex justify-center items-center gap-2">
+                            <img src="assets/board.png" class="w-24" alt="">
+                            <p class="font-bold text-2xl text-white">Discover Something <br> New Today!</p>
+                        </div>
                     </div>
-                </div>
-    
-                <div class="card_2 bg-linear-to-r/hsl from-indigo-500 to-teal-400">
-                    <div>
-                        <img src="assets/board.png" alt="">
+
+                    <div class="card_3 h-32 w-64 bg-sky-50 rounded-md flex justify-around items-center">
+                        <div class="rounded-full">
+                            <i class="fa-solid fa-calendar-days text-5xl calender"></i>
+                        </div>
+                        <div>
+                            <h4 id="showDate">
+
+                            </h4>
+
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- ================================================================================================ -->
+            <div class="taskCard grid grid-cols-3 gap-3 pt-5">
+
+
+                <div class="card card-border bg-sky-50">
+                    <div class="card-body">
+                        <h2 class="  bg-transparent">ShopEase</h2>
+                        <h2 class="text-xl font-semibold">Fix Mobile Button Issue </h2>
+                        <p>Debug using Chrome DevTools, check for overlappin...</p>
+                        <div class="justify-end flex justify-between">
+                            <div>
+                                <p>deadline</p>
+                                <h4 class="font-bold">21 March 2025</h4>
+                            </div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-border bg-sky-50">
+                    <div class="card-body">
+                        <h2 class=" bg-transparent">CloudSync </h2>
+                        <h2 class="text-xl font-semibold">Add Dark Mode</h2>
+                        <p>Store the user's preference in localStorage, update CSS varia...</p>
+                        <div class="justify-end flex justify-between">
+                            <div>
+                                <p>deadline</p>
+                                <h4 class="font-bold">21 March 2025</h4>
+                            </div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-border bg-sky-50">
+                    <div class="card-body">
+                        <h2 class=" bg-transparent">SwiftPay</h2>
+                        <h2 class="text-xl font-semibold">Optimize  Home page  </h2>
+                        <p>Debug using Chrome DevTools, check for overlappin...</p>
+                        <div class="justify-end flex justify-between">
+                            <div>
+                                <p>deadline</p>
+                                <h4 class="font-bold">21 March 2025</h4>
+                            </div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-border bg-sky-50">
+                    <div class="card-body">
+                        <h2 class=" bg-transparent">Meta</h2>
+                        <h2 class="text-xl font-semibold">Add new emoji 🤲</h2>
+                        <p>Debug using Chrome DevTools, check for overlappin...</p>
+                        <div class="justify-end flex justify-between">
+                            <div>
+                                <p>deadline</p>
+                                <h4 class="font-bold">21 March 2025</h4>
+                            </div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-border bg-sky-50">
+                    <div class="card-body">
+                        <h2 class=" bg-transparent">Google LLC</h2>
+                        <h2 class="text-xl font-semibold">Integrate OpenAI API  </h2>
+                        <p>Debug using Chrome DevTools, check for overlappin...</p>
+                        <div class="justify-end flex justify-between">
+                            <div>
+                                <p>deadline</p>
+                                <h4 class="font-bold">21 March 2025</h4>
+                            </div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-border bg-sky-50">
+                    <div class="card-body">
+                        <h2 class="bg-transparent ">Glassdoar</h2>
+                        <h2 class="text-xl font-semibold">Improve Job searching </h2>
+                        <p>Debug using Chrome DevTools, check for overlappin...</p>
+                        <div class="justify-end flex justify-between">
+                            <div>
+                                <p>deadline</p>
+                                <h4 class="font-bold">21 March 2025</h4>
+                            </div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+            </div>
         </div>
-        
-
-
-
-
-
-
-
 
 
 
         <!-- //////////////////////////////////////////////////////////// -->
-         <div class="rightHero">
+        <div class="rightHero flex py-6 px-16 bg-white rounded-lg ">
+            <div>
+                <div class="flex gap-8">
+                    <i class="fa-regular fa-clock text-2xl"></i>
+                    <h3 class="text-md">Activity Log</h3>
+                </div>
 
-         </div>
+                <div class="pt-5 items-center justify-center">
+                    <button class="btn bg-primary text-rose-50">Clear History</button>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
+
+
+
 
 
     <script src="js/main.js"></script>
