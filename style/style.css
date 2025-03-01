@@ -7,7 +7,13 @@
 .card_2{
     background: linear-gradient(to right, rgb(68, 27, 255), rgb(192, 192, 255));
 }
-.taskCards{
-
-    
+.history-item{
+    height: 80px;
+    width: 270px;
+    border-radius: 13px;
+    border: none;
+    --tw-bg-opacity: 1;
+    background-color: rgb(240 249 255 / var(--tw-bg-opacity, 1));
+    text-align: center;
+    margin-top: 10px;
 }
