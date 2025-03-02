@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-5</title>
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Circle-icons-dev.svg/512px-Circle-icons-dev.svg.png">
+    <link rel="stylesheet" href="style/style.css">
+
+
+    <!-- tailwind css -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-sky-50 h-screen pt-5">
+
+    <div class="navbar bg-white max-w-screen-sm lg:max-w-screen-xl rounded-lg mx-auto p-4">
+        <div class="flex-1 gap-1">
+            <img src="assets/logo.png" alt="">
+            <a class="btn-ghost text-3xl font-popins">Dev<span class="font-bold">Board</span></a>
+        </div>
+        <div class="flex-none gap-7">
+            <div class="dropdown dropdown-end bg-sky-50 p-2 rounded-3xl font-bold text-3xl">
+
+            </div>
+            <div id="desk" class="">
+                <button class="btn bg-primary text-white">Back to desk</button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class=" max-w-screen-sm lg:max-w-screen-xl rounded-lg mx-auto mt-8 ">
+        <div class="collapse bg-base-100 border border-base-300 mt-3">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title font-semibold">Question-1: What are the different ways to select an element in
+                the DOM?</div>
+            <div class="collapse-content text-sm">DOM হলো একটি প্রগ্রামিং ইন্টারফেজ যেটা html এর বিভিন্ন এলিমেন্ট কে
+                ধরতে help করে । এবং কিছু কাজ করতে সক্ষম হয় । </div>
+        </div>
+        <div class="collapse bg-base-100 border border-base-300 mt-3">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML, innerText,
+                and textContent ?</div>
+            <div class="collapse-content text-sm">innerHTML দ্বারা html content select করা যায় , innerText দ্বারা শুধু
+                মাত্র ভিতরের লেখা পাওয়া যায় । textContent দ্বারা সব লেখা পাওয়া যায় লুকানো লেখা সহ । </div>
+        </div>
+        <div class="collapse bg-base-100 border border-base-300 mt-3">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?</div>
+            <div class="collapse-content text-sm">Event Delegation হলো JavaScript-এর একটি system, যেখানে আমরা একটি
+                প্যারেন্ট (parent) এলিমেন্টের ওপর একটি ইভেন্ট লিসেনার (event listener) যোগ করি, যাতে তার সব চাইল্ড
+                (child) এলিমেন্টের ইভেন্ট হ্যান্ডেল করা যায়।
+
+                এটি সম্ভব হয় Event Bubbling এর কারণে।
+
+            </div>
+        </div>
+        <div class="collapse bg-base-100 border border-base-300 mt-3">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?</div>
+            <div class="collapse-content text-sm">কোনো চাইল্ড এলিমেন্টে ইভেন্ট ঘটলে, সেটি তার প্যারেন্ট, গ্র্যান্ডপ্যারেন্ট এবং সবচেয়ে উপরের এলিমেন্ট পর্যন্ত পৌঁছে যায়।</div>
+        </div>
+        <div class="collapse bg-base-100 border border-base-300 mt-3">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+            <div class="collapse-content text-sm">JavaScript ব্যবহার করে ডায়নামিকভাবে HTML এলিমেন্ট তৈরি করা, পেজে যোগ করা এবং মুছে ফেলা সম্ভব।</div>
+        </div>
+    </div>
+
+
+    <script src="js/backDesk.js"></script>
+</body>

@@ -9,6 +9,8 @@ const taskCompleted = document.getElementById("navTask");
 
 const removeChild = document.getElementById("clear");
 
+let clickedCount = 0;
+
 function getCurrentTime() {
     const time = new Date();
     return time.toLocaleString();
@@ -29,6 +31,11 @@ buttons.forEach(button => {
         taskCompleted.textContent = parseInt(taskCompleted.textContent)+1;
 
         this.disabled = true;
+        clickedCount++;
+
+        if (clickedCount === buttons.length) {
+            alert("congratulation !! you have complete the all task .");
+        }
 
     });
 });
